@@ -1,0 +1,12 @@
+{
+  "name": "Trailblazer-EcoCAR",
+  "displayName": "Trailblazer-EcoCAR",
+  "expo": {
+    "name": "Trailblazer-EcoCAR",
+    "slug": "Trailblazer-EcoCAR",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
