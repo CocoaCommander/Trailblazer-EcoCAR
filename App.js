@@ -3,10 +3,11 @@ import React from 'react';
 import { Text, View } from 'react-native';
 import { styles } from './components/styles.js';
 
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Replace this text with your component.</Text>
+      <Text>locationInput</Text>
       <StatusBar style="auto" />
     </View>
   );
