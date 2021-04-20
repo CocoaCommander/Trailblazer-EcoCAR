@@ -14,15 +14,3 @@ function carReviews() {
         </View>
     )
 }
-
-export default function CarInfo() {
-    return (
-        <View>
-            {/* Search box here */}
-            {/* Results here */}
-            <View> {/* Main Info View */}
-                <carReviews />
-            </View>
-        </View>
-    );
-}
