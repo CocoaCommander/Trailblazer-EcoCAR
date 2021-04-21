@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { Text, View, Image, TouchableOpacity} from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons'; 
 import { styles } from './styles';
 
@@ -14,47 +14,92 @@ export default function Menu() {
 
             <View style = {styles.icons}>
                 <MaterialIcons name="notifications" size={24} color="black" />
-                <Text>Notifications</Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Notifications</Text>
+                </TouchableOpacity>
             </View>
             
             <View style = {styles.icons}>
                 <MaterialIcons name="card-giftcard" size={24} color="black" />
-                <Text>Get $5 free</Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text> Get $5 Free </Text>
+                </TouchableOpacity>
             </View>
 
             <View style = {styles.icons}>
                 <MaterialIcons name="history" size={24} color="black" />
-                <Text>Ride history</Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Ride History</Text>
+                </TouchableOpacity>
             </View>
         
             <View style = {styles.icons}>
                 <MaterialIcons name="payment" size={24} color="black" />
-                <Text>Payment</Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Payment</Text>
+                </TouchableOpacity>
             </View>
             
             <View style = {styles.icons}>
                 <MaterialIcons name="auto-awesome" size={24} color="black" /> 
-                <Text>Promos</Text>
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Promos</Text>
+                </TouchableOpacity>
             </View>
             
             <View style = {styles.icons}>
                 <MaterialIcons name="school" size={24} color="black" />
-                <Text>Onboarding</Text> 
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Onboarding</Text>
+                </TouchableOpacity>
             </View>
 
             <View style = {styles.icons}>
                 <MaterialIcons name="import-contacts" size={24} color="black" />
-                <Text>Car Manual</Text>    
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Car Manual</Text>
+                </TouchableOpacity>  
             </View>
 
             <View style = {styles.icons}>
                 <MaterialIcons name="question-answer" size={24} color="black" />
-                <Text>FAQs</Text>   
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>FAQs</Text>
+                </TouchableOpacity>
             </View>
 
             <View style = {styles.icons}>
                 <MaterialIcons name="settings" size={24} color="black" />
-                <Text>Settings</Text> 
+                <TouchableOpacity
+                    style={styles.button}
+                    onPress={this.onPress}
+                >
+                    <Text>Settings</Text>
+                </TouchableOpacity> 
             </View>
             
         </View>

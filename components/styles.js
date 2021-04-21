@@ -9,8 +9,14 @@ export const styles = StyleSheet.create({
     },
 
     profile: {
+      alignSelf: 'center',
       width: 100,
       height: 100,
+    },
+
+    name: {
+      textAlign: 'center',
+      fontSize: 50,
     },
 
     icons: {
@@ -18,6 +24,12 @@ export const styles = StyleSheet.create({
       paddingHorizontal: 10,
       flexDirection: "row",
       alignItems: "center"
+    },
+
+    button: {
+        backgroundColor: "white",
+        padding: 5,
+        alignItems: 'center'
     }
 
   });
