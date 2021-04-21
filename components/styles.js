@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import locationInput from './locationInput';
 
 export const styles = StyleSheet.create({
@@ -17,6 +18,19 @@ export const styles = StyleSheet.create({
       marginVertical: 5,
 
     }
+
+    locationFinder {
+      backgroundColor: '#ffff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 10,
+      border-radius: 10,
+    }
+
+    backButton {
+
+    }
+
   });
 
   export default styles;
