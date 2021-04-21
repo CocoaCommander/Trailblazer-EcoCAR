@@ -2,11 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { Text, View } from 'react-native';
 import { styles } from './components/styles.js';
+import Menu from './components/menu.js'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Replace this text with your component.</Text>
+      <Menu />
       <StatusBar style="auto" />
     </View>
   );

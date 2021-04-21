@@ -7,4 +7,17 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       justifyContent: 'center',
     },
+
+    profile: {
+      width: 100,
+      height: 100,
+    },
+
+    icons: {
+      paddingVertical: 10,
+      paddingHorizontal: 10,
+      flexDirection: "row",
+      alignItems: "center"
+    }
+
   });
