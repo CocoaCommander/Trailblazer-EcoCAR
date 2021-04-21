@@ -24,5 +24,11 @@ export const styles = StyleSheet.create({
       },
       shadowOpacity: 0.1,
       shadowRadius: 1.5,
+    },
+
+    destDateChild: {
+      flex: 1,
+      padding: 1,
+      alignItems: 'center'
     }
   });
