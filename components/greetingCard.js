@@ -5,12 +5,11 @@ import BottomSearchBar from 'bottomsearchbar'
 export default function myComponent() {
     return (
         <View>
-            <Text>Happy Thursday, John</Text>
+            <Text>"Happy Thursday, John"</Text>
             <BottomSearchBar
                 openedHeight={800}
                 placeHolderText="Where are you wanting to go?"
                 cancelText="Close"
-
             />
         </View>
     );
