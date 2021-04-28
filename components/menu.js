@@ -5,12 +5,12 @@ import { styles } from './styles';
 
 export default function Menu() {
     return (
-        <View>
+        <View style = {styles.menuContainer}>
             <Image
                 style = {styles.profile}
                 source = {{uri: 'https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png' }}
             />
-            <Text>Name</Text>
+            <Text style = {styles.name}>Name</Text>
 
             <View style = {styles.icons}>
                 <MaterialIcons name="notifications" size={24} color="black" />

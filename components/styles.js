@@ -8,28 +8,14 @@ export const styles = StyleSheet.create({
       justifyContent: 'center',
     },
 
-    profile: {
-      alignSelf: 'center',
-      width: 100,
-      height: 100,
-    },
-
-    name: {
-      textAlign: 'center',
-      fontSize: 50,
-    },
-
-    icons: {
-      paddingVertical: 10,
-      paddingHorizontal: 10,
-      flexDirection: "row",
-      alignItems: "center"
-    },
-
     button: {
         backgroundColor: "white",
-        padding: 5,
-        alignItems: 'center'
+        width: 45,
+        height: 45,
+        borderRadius: 200 / 2,
+        borderWidth: 1,
+        borderColor: "gray",
+        alignItems: 'center',
     }
 
   });
