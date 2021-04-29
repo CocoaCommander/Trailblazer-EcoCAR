@@ -191,3 +191,5 @@ import locationInput from './locationInput';
       top: -30,
     }
   });
+
+  export default styles;
