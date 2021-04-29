@@ -28,7 +28,11 @@ export const styles = StyleSheet.create({
     }
 
     backButton {
-
+      backgroundColor: '#ffff',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 10,
+      border-radius: 10,
     }
 
   });
