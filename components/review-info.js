@@ -7,7 +7,7 @@ export default function ReviewInfo() {
     return (
         <View>
             <View style={styles.ratings}>
-                <Text style={styles.avgRating}>5.0 </Text>
+                <Text style={styles.ratings}>5.0 </Text>
                 <Stars />
             </View>
             

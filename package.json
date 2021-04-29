@@ -8,7 +8,11 @@
     "test": "jest"
   },
   "dependencies": {
+<<<<<<< HEAD
     "expo": "^41.0.0",
+=======
+    "expo": "^40.0.1",
+>>>>>>> origin/hannah-review-info
     "expo-splash-screen": "~0.8.0",
     "expo-status-bar": "~1.0.3",
     "expo-updates": "~0.4.0",
