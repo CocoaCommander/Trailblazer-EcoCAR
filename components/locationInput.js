@@ -68,6 +68,3 @@ export default function locationInput() {
     );
     }
 }
-
-/* uber clone: https://www.youtube.com/watch?v=sIRcN0MeZVU&ab_channel=VadimSavin
-    google places autocomplete: https://www.npmjs.com/package/react-native-google-places-autocomplete */
