@@ -1,20 +1,25 @@
 import React, {useEffect, useState} from 'react';
 import { View, TextInput, SafeAreaView} from 'react-native';
 import { styles } from './styles.js';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+//import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
-export default function locationInput() {
-        <SafeAreaView>
-            <View style={styles.container}>
+export default function LocationInput() {
+
+    const [text, onChangeText] = React.useState("From");
+    const [destText, onChangeDestText] = React.useState("Where to?");
+
+    return (
+        // <SafeAreaView style={styles.safeAreaView}>
+            <View >
                 <TextInput 
-                    value={fromText}
-                    onTextChange={setFromText}
+                    value={text}
+                    onChangeText={onChangeText}
                     style={styles.textInput} 
                     placeholder="From" 
                 />
                 <TextInput 
-                    value={destinationText}
-                    onTextChange={setDestinationText}
+                    value={destText}
+                    onChangeDestText={onChangeDestText}
                     style={styles.textInput} 
                     placeholder="Where to?" 
                 />
@@ -49,7 +54,9 @@ export default function locationInput() {
                     }}
                 /> */}
             </View>
-        </SafeAreaView>
+        //</SafeAreaView>
+    )
+
     }
 //}
 

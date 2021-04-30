@@ -17,22 +17,27 @@ export default function ReviewInfo() {
 
 function Stars() {
     return (
-        <View style={styles.stars}>
+        <View>
+            <View style={styles.stars}>
             <SingleStar />
-        <View style={styles.stars}>
-            <SingleStar />
-        <View style={styles.stars}>
-            <SingleStar />
-        <View style={styles.stars}>
-            <SingleStar />
-        <View style={styles.stars}>
-            <SingleStar />
-        </View>
-        </View>
-        </View>
-        </View>
-        </View>
-        
+            </View>
+
+            <View style={styles.stars}>
+                <SingleStar />
+            </View>
+
+            <View style={styles.stars}>
+                <SingleStar />
+            </View>
+
+            <View style={styles.stars}>
+                <SingleStar />
+            </View>
+
+            <View style={styles.stars}>
+                <SingleStar />
+            </View>
+        </View>     
     )
 }
 

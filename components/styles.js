@@ -1,22 +1,24 @@
 import { StyleSheet } from 'react-native';
-import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
-import locationInput from './locationInput';
 
   export const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff',
       alignItems: 'center',
+
+    },
+
+    container2: {
+      flex: 1,
+      alignItems: 'stretch',
       justifyContent: 'center',
-      padding: 10,
-      height: '100%',
+
     },
 
     textInput: {
       padding: 10,
       backgroundColor: '#eee',
       marginVertical: 5,
-
+      // width: '90%',
     },
 
     locationFinder: {
@@ -46,13 +48,13 @@ import locationInput from './locationInput';
     },
 
     destDate: {
-      flex: 0.05,
+      flex: 0,
       flexDirection: 'row',
       justifyContent: 'center',
-      alignContent: 'center',
+      alignContent: 'stretch',
       alignItems: 'center',
       backgroundColor: 'white',
-      width: 300,
+      width: '90%',
       borderRadius: 10,
       shadowColor: '#000000',
       shadowOffset: {
@@ -61,6 +63,8 @@ import locationInput from './locationInput';
       },
       shadowOpacity: 0.1,
       shadowRadius: 1.5,
+      marginTop: 30,
+      height: 30,
     },
 
     destDateChild: {
@@ -213,6 +217,28 @@ import locationInput from './locationInput';
     avgRatings: {
       flexDirection: 'row',
       top: -30,
+    },
+
+    greetingCard: {
+      flex: 1,
+      justifyContent: 'flex-end',
+      //marginBottom: 36,
+      marginLeft: 0,
+      paddingRight: 0,
+      width: '100%'
+    },
+
+    hamburger: {
+      flex: 1,
+      flexDirection: 'row',
+      justifyContent: 'flex-start',
+      padding: 40,
+      width: '100%',
+    },
+
+    reviewContainer: {
+      flex: 1,
+      flexDirection: 'row'
     }
   });
 

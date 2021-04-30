@@ -1,17 +1,26 @@
 import React from 'react';
-import { Text, View, Button, Image, Images } from 'react-native';
+import { Text, View, Button, Image, Pressable } from 'react-native';
+import { styles } from './styles'
 
-function carReviews() {
+export default function CarReviews(props) {
     return (
-        <View> {/*Details*/}
-            <View> 
-                <Image />{/*image of car*/}
-                <Text>2019 Chevrolet Blazer {/* replace for modularity later */} </Text>
-                <Button />{/*Chevrolet*/}
-                <Images/>{/*5 star rating*/}
-                <Text>{/* Car info*/}</Text>
-            </View>
-        </View>
+        <Pressable style={styles.reviewContainer} onPress={() => props.navigation.navigate("CarDetail")}>
+                <Image source={require('./Assets/blazer-1.png')}/>
+                <View>
+                    <Text>2019 Chevrolet Blazer 
+                        {/* replace for modularity later */} 
+                    </Text>
+
+                    {/*Chevrolet*/}
+                    <Image/>
+                    {/*5 star rating*/}
+                    <Text>
+                        {/* Car info*/}
+                        TEST TEST
+                    </Text>
+                </View>
+        </Pressable>
+        
     )
 }
 

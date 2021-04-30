@@ -85,7 +85,7 @@ function BlueShelf() {
                 </View>
                 {/* Review Info component */}
                 {/* pic of car */}
-                <Image source={require("/Users/ryanlee/Desktop/EcoCAR/Trailblazer-EcoCAR/components/Assets/blazer-1.png")}/>
+                <Image source={require('./Assets/blazer-1.png')}/>
             </View>
             <WhiteShelf />
         </View>
