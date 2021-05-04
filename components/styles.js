@@ -17,22 +17,22 @@ export const styles = StyleSheet.create({
       backgroundColor: '#eee',
       marginVertical: 5,
 
-    }
+    },
 
-    locationFinder {
+    locationFinder: {
       backgroundColor: '#ffff',
       alignItems: 'center',
       justifyContent: 'center',
       padding: 10,
-      border-radius: 10,
-    }
+      borderRadius: 10,
+    },
 
-    backButton {
+    backButton: {
       backgroundColor: '#ffff',
       alignItems: 'center',
       justifyContent: 'center',
       padding: 10,
-      border-radius: 10,
+      borderRadius: 10,
     }
 
   });
