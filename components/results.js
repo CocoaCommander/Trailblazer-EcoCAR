@@ -1,19 +1,32 @@
 
 import React from 'react';
-import { Text, View, Button, Image, Images } from 'react-native';
+import { View, ScrollView } from 'react-native';
 import DestinationDate from "./destinationDate"
-import carReviews from "./carReviews"
+import CarReviews from "./CarReviews"
+import { styles } from './styles'
 
-export default function myComponent() {
+export default function Results(props) {
     return (
-        <View>
-            <DestinationDate/>
-            <carReviews/>
-            <carReviews/>
-            <carReviews/>
-            <carReviews/>
-            <carReviews/>
-            <carReviews/>
+        <View style={styles.container}>
+            <View>
+                <DestinationDate />
+            </View>
+            {/* replace w FLatList once we get API calls good to go */}
+            <ScrollView>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+                <CarReviews navigation={props.navigation}/>
+            </ScrollView>
+            
         </View>
     );
 }

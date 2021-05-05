@@ -1,21 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, View } from 'react-native';
-import carReviews from "./components/carReviews"
-import greetingCard from "./components/greetingCard"
-import results from "./results.js"
-import Hamburger from './components/hamburger.js'
-import {Calendar} from './components/calendar';
-import DestinationDate from './components/destDate';
-import { styles } from './components/styles';
+import HomeScreen from './components/hannahHomeScreen.js';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import SearchLocationScreen from './components/searchLocationScreen.js';
+import Results from './components/results'
+import CarDetail from './components/CarDetail'
+
+const Stack = createStackNavigator();
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <greetingCard/>
-      <Hamburger />
-      <DestinationDate />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      {/* screenOptions={{headerShown: false}} goes after "Home"*/}
+      <Stack.Navigator initialRouteName="Home" >
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="SearchLocations" component={SearchLocationScreen} />
+        <Stack.Screen name="Results" component={Results} />
+        <Stack.Screen name="CarDetail" component={CarDetail} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

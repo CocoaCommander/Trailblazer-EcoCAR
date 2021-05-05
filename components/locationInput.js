@@ -1,40 +1,30 @@
 import React, {useEffect, useState} from 'react';
 import { View, TextInput, SafeAreaView} from 'react-native';
 import { styles } from './styles.js';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+//import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
-export default function locationInput() {
-    const locationInput = (props) => {
-/*         const [fromText, setFromText] = useState(initialState: '');
-        const [destinationText, setDestinationText] = useState(initialState: ''); */
+export default function LocationInput() {
 
-        const [originPlace, setOriginPlace] = useState('');
-        const [destinationPlace, setDestinationPlace] = useState('');
-
-        useEffect(a: () => {
-            console.warn(data: 'useEffect is called');
-            if(originPlace && destinationPlace) {
-                console.warn(data: 'Redirect to results');
-            }
-        }, b: [originPlace, destinationPlace]);
+    const [text, onChangeText] = React.useState("From");
+    const [destText, onChangeDestText] = React.useState("Where to?");
 
     return (
-        <SafeAreaView>
-            <View style={styles.container}>
-                {/* <TextInput 
-                    value={fromText}
-                    onTextChange={setFromText}
+        // <SafeAreaView style={styles.safeAreaView}>
+            <View >
+                <TextInput 
+                    value={text}
+                    onChangeText={onChangeText}
                     style={styles.textInput} 
                     placeholder="From" 
-                /> */}
-                {/* <TextInput 
-                    value={destinationText}
-                    onTextChange={setDestinationText}
+                />
+                <TextInput 
+                    value={destText}
+                    onChangeDestText={onChangeDestText}
                     style={styles.textInput} 
                     placeholder="Where to?" 
-                /> */}
+                />
 
-                <GooglePlacesAutocomplete
+                {/* <GooglePlacesAutocomplete
                     placeholder='Where from?'
                     onPress={(data: GooglePlaceData, details : GooglePlaceDetail | null) => {
                         setOriginPlace(value: {data, details})
@@ -62,12 +52,13 @@ export default function locationInput() {
                         key: 'YOUR API KEY', //figure out google dev - Google Places API not showing up
                         language: 'en',
                     }}
-                />
+                /> */}
             </View>
-        </SafeAreaView>
-    );
+        //</SafeAreaView>
+    )
+
     }
-}
+//}
 
 /* uber clone: https://www.youtube.com/watch?v=sIRcN0MeZVU&ab_channel=VadimSavin
     google places autocomplete: https://www.npmjs.com/package/react-native-google-places-autocomplete */
