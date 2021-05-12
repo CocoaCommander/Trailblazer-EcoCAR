@@ -7,6 +7,11 @@ import { useNavigation } from '@react-navigation/native';
 
 export default function GreetingCard({ navigation }) {
     //const navigation = useNavigation();
+
+    // let onClickNavigation = function() { 
+    //     navigation.navigate("SearchLocations") 
+    // }
+
     return (
         <View >
             <Text>"Happy Thursday, John"</Text>

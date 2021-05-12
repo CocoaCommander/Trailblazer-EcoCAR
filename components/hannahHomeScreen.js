@@ -18,7 +18,7 @@ export default function HomeScreen({ navigation }) {
             </View>
             <Text>Map goes here (placeholder)</Text>
             <View style={styles.greetingCard}>
-                <GreetingCard navigation={navigation}/>
+                <GreetingCard navigation={navigation} />
             </View>
             
             {/* <Hamburger style={styles.menuIcon} /> */}
