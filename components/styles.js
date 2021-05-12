@@ -16,19 +16,27 @@ export const styles = StyleSheet.create({
       padding: 10,
       backgroundColor: '#eee',
       marginVertical: 5,
-
     },
 
-    locationFinder: {
-      backgroundColor: '#ffff',
+    findCarButton: {
+      backgroundColor: #274690,
       alignItems: 'center',
       justifyContent: 'center',
       padding: 10,
       borderRadius: 10,
     },
 
-    backButton: {
+    locationFinderButton: {
       backgroundColor: '#ffff',
+      position: absolute,
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: 10,
+      borderRadius: 10,
+      // boxShadow: 0px 4px 20px rgba(0,0,0,0.25),
+    },
+
+    backButton: {
       alignItems: 'center',
       justifyContent: 'center',
       padding: 10,

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { View, TextInput, SafeAreaView} from 'react-native';
 import { styles } from './styles.js';
+//import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 
 export default function locationInput() {
     const locationInput = (props) => {
+
+    const [text, onChangeText] = React.useState("From");
+    const [destText, onChangeDestText] = React.useState("Where to?");
+   
     return (
         <SafeAreaView>
             <View style={styles.container}>
@@ -19,6 +24,34 @@ export default function locationInput() {
                     style={styles.textInput} 
                     placeholder="Where to?" 
                 />
+                /* <GooglePlacesAutocomplete
+                    placeholder='Where from?'
+                    onPress={(data: GooglePlaceData, details : GooglePlaceDetail | null) => {
+                        setOriginPlace(value: {data, details})
+                    }}
+                    styles={{
+                        textInput: styles.textInput,
+                    }}
+                    fetchDetails
+                    query={{
+                        key: 'YOUR API KEY', //figure out google dev - Google Places API not showing up
+                        language: 'en',
+                    }}
+                />
+                <GooglePlacesAutocomplete
+                    placeholder='Where to?'
+                    onPress={(data: GooglePlaceData, details : GooglePlaceDetail | null) => {
+                        setDestinationPlace(value: {data, details})
+                    }}
+                    styles={{
+                        textInput: styles.textInput,
+                    }}
+                    fetchDetails
+                    query={{
+                        key: 'YOUR API KEY', //figure out google dev - Google Places API not showing up
+                        language: 'en',
+                    }}
+                /> */
             }</View>
         </SafeAreaView>
     );
