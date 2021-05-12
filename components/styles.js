@@ -72,24 +72,31 @@ import { StyleSheet } from 'react-native';
       padding: 1,
       alignItems: 'center'
     },
+
+    carDetails: {
+      height: "20%"
+    },
+    
     carInfoMain: {
-      backgroundColor: '#274690',
-      marginTop: 200,
-      borderTopRightRadius: 35,
-      borderTopLeftRadius: 35
-    },
-    carInfoSecondary: {
-      backgroundColor: "white",
-      borderTopRightRadius: 35,
-      borderTopLeftRadius: 35
-    },
-    carInfoHeader: {
       flex: 1,
-      flexDirection: "row"
+      backgroundColor: "#274690",
+    },
+
+    carInfoMainHeader: {
+      flex: 1,
+      flexDirection: "row",
+      justifyContent: "space-between",
+      padding: 20
+    },
+
+    carInfoMainHeaderText: {
+      fontSize: 20,
+      color: "white"
     },
     testDark: {
       backgroundColor: "black"
     },
+
     textInput: {
       padding: 10,
       backgroundColor: '#eee',
@@ -211,7 +218,7 @@ import { StyleSheet } from 'react-native';
 
     ratings: {
       flexDirection: 'row',
-      fontSize: 26,
+      fontSize: 12,
     },
 
     avgRatings: {

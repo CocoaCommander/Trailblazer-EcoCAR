@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { View, TextInput, SafeAreaView} from 'react-native';
+import { View, TextInput, SafeAreaView, Text} from 'react-native';
 import { styles } from "./styles";
 //import { StackNavigator } from 'react-navigation';
 import { useNavigation } from '@react-navigation/native';
@@ -19,7 +19,7 @@ export default function GreetingCard({ navigation }) {
                     onChangeText={onChangeText}
                     style={styles.textInput} 
                     placeholder="Where are you wanting to go?" 
-                    buttonOnPress={() => navigation.navigate("SearchLocations")}
+                    // buttonOnPress={() => navigation.navigate("SearchLocations")}
                 />
 
                 </View>

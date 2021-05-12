@@ -17,7 +17,7 @@ export default function ReviewInfo() {
 
 function Stars() {
     return (
-        <View>
+        <View style={styles.stars}>
             <View style={styles.stars}>
             <SingleStar />
             </View>
