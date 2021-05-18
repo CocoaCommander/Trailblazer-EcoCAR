@@ -8,3 +8,15 @@ export default function back() {
         </View>
     );
 }
+
+<View >
+                
+<TextInput 
+    value={text}
+    onChangeText={onChangeText}
+    style={styles.textInput} 
+    placeholder="Where are you wanting to go?" 
+    buttonOnP
+/>
+
+</View>
