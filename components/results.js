@@ -2,7 +2,7 @@
 import React from 'react';
 import { View, ScrollView } from 'react-native';
 import DestinationDate from "./destinationDate"
-import CarReviews from "./CarReviews"
+import CarReviews from "./carReviews"
 import { styles } from './styles'
 
 export default function Results(props) {
