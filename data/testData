@@ -1,0 +1,31 @@
+[
+    {
+        "id": 1,
+        "year": "2019",
+        "make": "Chevrolet",
+        "model": "Blazer",
+        "licensePlate": "AJD 583",
+        "specs": [
+            {"type": "Gas Mileage", "value": "20/47+ MPG"},
+            {"type": "Seats", "value": 4},
+            {"type": "Bluetooth", "value": true},
+            {"type": "4G LTE Wi-fi", "value": true},
+            {"type": "Active Noise Cancellation", "value": true}
+        ],
+        "location": "3540 NE 110th Street Seattle, WA 98125",
+        "availability": [
+            {"from": "June 20, 2021", "to": "July 20, 2021"},
+            {"from": "August 2, 2021", "to": "August 3, 2021"}
+        ],
+        "price": {
+            "rate": 20,
+            "time": "hour"
+        },
+        "reviews": [
+            {
+                "rating": 4,
+                "reviewMessage": "This is a sample review. This is a sample review. This is a sample review. This is a sample review."
+            }
+        ]
+    }
+]
